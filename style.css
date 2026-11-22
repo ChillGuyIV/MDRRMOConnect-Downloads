@@ -42,8 +42,8 @@ body {
 }
 
 .brand img {
-    width: 43px;
-    height: 43px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
@@ -69,13 +69,16 @@ body {
 }
 
 .app-icon {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto 28px;
-    padding: 12px;
-    border-radius: 30px;
+    padding: 8px;
+    border-radius: 28px;
     background: white;
     box-shadow: 0 12px 35px rgba(18, 59, 93, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .app-icon img {
@@ -145,9 +148,9 @@ h1 span {
     color: white;
     text-decoration: none;
     border-radius: 13px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 800;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.5px;
     box-shadow: 0 8px 20px rgba(245, 130, 32, 0.25);
     transition: 0.2s ease;
 }
@@ -158,13 +161,16 @@ h1 span {
     box-shadow: 0 12px 24px rgba(245, 130, 32, 0.3);
 }
 
-.install-button > span:first-child {
-    font-size: 25px;
+.download-icon {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 auto;
 }
 
 .install-button.disabled {
     opacity: 0.6;
     pointer-events: none;
+    cursor: not-allowed;
 }
 
 .download-message {
@@ -191,8 +197,25 @@ h1 span {
 }
 
 .feature-icon {
-    font-size: 30px;
-    margin-bottom: 15px;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: var(--peach);
+    color: var(--navy);
+}
+
+.feature-icon svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .feature h3 {
@@ -254,8 +277,8 @@ footer {
 }
 
 .footer-logo {
-    width: 42px;
-    height: 42px;
+    width: 54px;
+    height: 54px;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -282,8 +305,8 @@ footer small {
     }
 
     .brand img {
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
     }
 
     .prototype-label {
@@ -293,6 +316,11 @@ footer small {
 
     .hero {
         padding-top: 55px;
+    }
+
+    .app-icon {
+        width: 132px;
+        height: 132px;
     }
 
     .features {
