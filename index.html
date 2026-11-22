@@ -12,14 +12,15 @@
     <meta name="theme-color" content="#123B5D">
 
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header class="navbar">
-        <a href="#" class="brand">
-            <img src="assets/favicon.png" alt="MDRRMO Connect Logo">
+        <a href="#" class="brand" aria-label="MDRRMO Connect home">
+            <img src="assets/mdrrmo-logo.png" alt="MDRRMO Connect official shield logo">
             <span>MDRRMO <strong>Connect</strong></span>
         </a>
 
@@ -30,7 +31,7 @@
         <section class="hero">
 
             <div class="app-icon">
-                <img src="assets/favicon.png" alt="MDRRMO Connect">
+                <img src="assets/mdrrmo-logo.png" alt="MDRRMO Connect official shield logo">
             </div>
 
             <p class="eyebrow">INCIDENT REPORTING AND EMERGENCY RESPONSE</p>
@@ -54,7 +55,11 @@
 
             <a id="installButton" class="install-button disabled"
                href="#" aria-disabled="true">
-                <span>↓</span>
+                <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3v11m0 0 4-4m-4 4-4-4M4 17v3h16v-3"
+                          fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
                 <span id="installText">LOADING DOWNLOAD...</span>
             </a>
 
@@ -64,22 +69,37 @@
 
         </section>
 
-        <section class="features">
+        <section class="features" aria-label="App features">
 
             <div class="feature">
-                <div class="feature-icon">📍</div>
+                <div class="feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                        <circle cx="12" cy="10" r="2.5"/>
+                    </svg>
+                </div>
                 <h3>GPS Location</h3>
                 <p>Share incident locations through automatic geotagging.</p>
             </div>
 
             <div class="feature">
-                <div class="feature-icon">📷</div>
+                <div class="feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 7h3l2-2h6l2 2h3v12H4z"/>
+                        <circle cx="12" cy="13" r="4"/>
+                    </svg>
+                </div>
                 <h3>Incident Reports</h3>
                 <p>Submit reports with photographic or video evidence.</p>
             </div>
 
             <div class="feature">
-                <div class="feature-icon">🔔</div>
+                <div class="feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/>
+                        <path d="M10 21h4"/>
+                    </svg>
+                </div>
                 <h3>Emergency Alerts</h3>
                 <p>Stay informed about important emergency notifications.</p>
             </div>
@@ -90,7 +110,7 @@
             <h2>How to install</h2>
 
             <div class="steps">
-                <div><b>01</b><span>Tap the Install Now button.</span></div>
+                <div><b>01</b><span>Tap the Download App Now button.</span></div>
                 <div><b>02</b><span>Download the APK file.</span></div>
                 <div><b>03</b><span>Open the downloaded file.</span></div>
                 <div><b>04</b><span>Tap Install when Android asks for confirmation.</span></div>
@@ -104,7 +124,7 @@
     </main>
 
     <footer>
-        <img src="assets/favicon.png" alt="" class="footer-logo">
+        <img src="assets/mdrrmo-logo.png" alt="MDRRMO Connect shield logo" class="footer-logo">
         <p><strong>MDRRMO Connect</strong></p>
         <p>Incident Reporting and Emergency Response</p>
         <small>Prototype Application • Android</small>
