@@ -29,19 +29,14 @@ async function loadLatestRelease() {
             throw new Error("No APK file was found in the latest release.");
         }
 
-        versionElement.textContent =
-            "Version " + release.tag_name;
+        versionElement.textContent = "Version " + release.tag_name;
 
         installButton.href = apk.browser_download_url;
         installButton.classList.remove("disabled");
         installButton.removeAttribute("aria-disabled");
+        installButton.setAttribute("download", apk.name);
 
-        installButton.setAttribute(
-            "download",
-            apk.name
-        );
-
-        installText.textContent = "INSTALL NOW";
+        installText.textContent = "DOWNLOAD APP NOW";
 
         messageElement.textContent =
             "Latest APK available • " +
